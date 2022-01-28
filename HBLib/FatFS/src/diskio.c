@@ -43,7 +43,7 @@ DSTATUS disk_initialize (
   {
     // Initialization of SDIO and Card
     SDIO_Init(SDIO,
-              400000,             // 400kHz
+              20000000,             // 20 MHz
               cmuClock_HFPER);
 	uint8_t a_u8 = SDIO_GetActCardStateType();
 	switch(a_u8){
